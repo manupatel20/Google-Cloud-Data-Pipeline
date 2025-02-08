@@ -94,16 +94,17 @@ SELECT * FROM sales.orders;
 ---
 
 ### Screenshots
-Web Interface
+Web Interface  
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/9c23b033-4e70-40f1-9d4f-0a62323ed67d" />
 
 
-File Uploaded to GCS
+File Uploaded to GCS  
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/17e64d83-4487-47cd-a8fd-ae55d6ed4f0a" />
 
 
-Data Loaded into BigQuery
-<img width="1114" alt="image" src="https://github.com/user-attachments/assets/3da57291-509f-4004-bfdf-ccfeae8d8a94" />
+Data Loaded into BigQuery  
+<img width="1114" alt="google_cloud_img" src="https://github.com/user-attachments/assets/1f579b3b-fa40-413f-9dd9-c1c5d37f37f4" />
+
 
 ---
 
