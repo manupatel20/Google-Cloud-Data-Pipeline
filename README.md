@@ -46,5 +46,72 @@ cd cloud-pipeline
 Install the required Python packages:
 ```bash
 pip install -r requirements.txt
+```
+### 3. Set Up Google Cloud
+Create a Google Cloud Storage Bucket:
+
+```bash
+gsutil mb gs://your-bucket-name
+Create a BigQuery Dataset and Table:
+```
+
+
+### 4. Configure Environment Variables
+Set the following environment variables:
+
+```bash
+export GCS_BUCKET_NAME="your-bucket-name"
+export DATASET="sales"
+export TABLE="orders"
+```
+---
+
+### Usage
+1. Run the Flask Application
+Start the Flask web server:
+
+```bash
+python app.py
+
+2. Access the Web Interface
+Open your browser and navigate to:
+
+```
+http://127.0.0.1:5000
+```
+
+3. Upload a File
+Use the web interface to upload a file (e.g., CSV).
+The file will be uploaded to your GCS bucket and automatically loaded into BigQuery.
+
+4. Verify Data in BigQuery
+Query the BigQuery table to verify the data:
+
+```sql
+SELECT * FROM sales.orders;
+```
+
+---
+
+### Screenshots
+Web Interface
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/9c23b033-4e70-40f1-9d4f-0a62323ed67d" />
+
+
+File Uploaded to GCS
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/17e64d83-4487-47cd-a8fd-ae55d6ed4f0a" />
+
+
+Data Loaded into BigQuery
+<img width="1114" alt="image" src="https://github.com/user-attachments/assets/3da57291-509f-4004-bfdf-ccfeae8d8a94" />
+
+---
+
+### Support
+
+For any questions or issues, please open an issue on Github.
+
+
+
 
 
